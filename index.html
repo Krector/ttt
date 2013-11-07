@@ -14,23 +14,38 @@
     <div id="container">
       <table>
         <tbody>
-        <tr>
-          <td>x</td>
-          <td>o</td>
-          <td></td>
+        <tr class="row1">
+          <td class="cell1">X</td>
+          <td class="cell2"></td>
+          <td class="cell3"></td>
         </tr>
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>o</td>
+        <tr class="row2">
+          <td "cell1"></td>
+          <td class="cell2"></td>
+          <td class="cell3"></td>
         </tr>
-        <tr>
-          <td>x</td>
-          <td></td>
-          <td>x</td>
+        <tr class="row3">
+          <td class="cell1"></td>
+          <td class="cell2"></td>
+          <td class="cell3"></td>
         </tr>
       </tbody>
     </table>
+        <div id="statusBar">
+            <p class="player">Player: <span></span> </p>
+            <input class="reset">
+        </div>
+        
     </div>
+      
+    <script   src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="ttt.js"></script>
+    <script>
+        $(document).ready (function(){
+        app.init();  
+        })
+    </script>
+
   </body>
 </html>
