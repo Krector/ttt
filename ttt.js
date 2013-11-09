@@ -5,18 +5,20 @@ var boardArray =  [
 
 var playerSymbol = ['X', 'O'];
 
-var player = 0; //X goes first
+var player = 0;
 
 var app = {
     init: function () {
         
-    //All the load events go here
-    $('td').click(app.verifyMove);
+        //All the load events go here
+        $('td').click(app.verifyMove);
+        $('.reset').click(app.resetBoard);
         app.resetBoard();
     },
     
     resetBoard : function () {
         $('td').text('');
+        player = 0;
         
     },
     
